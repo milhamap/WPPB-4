@@ -6,7 +6,7 @@ class DoneTourismProvider extends ChangeNotifier {
 
   List<TourismPlace> get doneTourismPlaceList => _doneTourismPlaceList;
 
-  void complete(TourismPlace place, bool, isDone) {
+  void complete(TourismPlace place, bool isDone) {
     isDone
         ? _doneTourismPlaceList.add(place)
         : _doneTourismPlaceList.remove(place);
